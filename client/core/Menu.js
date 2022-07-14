@@ -1,12 +1,13 @@
-import React from 'react'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import IconButton from '@material-ui/core/IconButton'
-import HomeIcon from '@material-ui/icons/Home'
-import Button from '@material-ui/core/Button'
-import auth from './../auth/auth-helper'
-import {Link, withRouter} from 'react-router-dom'
+var React = require('react')
+var AppBar = require('@material-ui/core/AppBar')
+var Toolbar = require('@material-ui/core/Toolbar')
+var Typography = require('@material-ui/core/Typography')
+var IconButton = require('@material-ui/core/IconButton')
+var HomeIcon = require('@material-ui/icons/Home')
+var Button = require('@material-ui/core/Button')
+var auth = require('./../auth/auth-helper')
+var { Link } = require('react-router-dom')
+var { withRouter }  = require('react-router-dom')
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
@@ -14,7 +15,8 @@ const isActive = (history, path) => {
   else
     return {color: '#ffffff'}
 }
-const Menu = withRouter(({history}) => (
+const Menu = () => withRouter(
+  ({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">

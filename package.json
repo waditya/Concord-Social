@@ -2,7 +2,7 @@
   "name": "mern-social",
   "version": "2.0.0",
   "description": "A MERN stack based social media application",
-  "author": "Shama Hoque",
+  "author": "Aditya Wagholikar",
   "license": "MIT",
   "keywords": [
     "react",
@@ -23,41 +23,44 @@
     "start": "NODE_ENV=production node ./dist/server.generated.js"
   },
   "engines": {
-    "node": "13.12.0",
-    "npm": "6.14.4"
+    "node": "18.5.0",
+    "npm": "8.12.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
-    "babel-loader": "8.1.0",
+    "babel-loader": "^8.2.5",
     "file-loader": "6.0.0",
-    "nodemon": "2.0.2",
+    "nodemon": "^2.0.19",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11",
     "webpack-dev-middleware": "3.7.2",
-    "webpack-hot-middleware": "2.25.0",
+    "webpack-hot-middleware": "^2.25.1",
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
-    "@material-ui/core": "4.9.8",
+    "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "4.9.1",
-    "body-parser": "1.19.0",
+    "@material-ui/styles": "^4.11.5",
+    "body-parser": "^1.19.0",
     "compression": "1.7.4",
-    "cookie-parser": "1.4.5",
+    "cookie-parser": "^1.4.6",
     "cors": "2.8.5",
     "express": "4.17.1",
-    "express-jwt": "5.3.1",
+    "express-jwt": "^7.7.5",
     "formidable": "1.2.2",
     "helmet": "3.22.0",
     "jsonwebtoken": "8.5.1",
-    "lodash": "4.17.15",
-    "mongoose": "5.9.7",
+    "lodash": "^4.17.21",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.13.14",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hot-loader": "4.12.20",
-    "react-router": "5.1.2",
-    "react-router-dom": "5.1.2"
+    "react-router": "^5.3.3",
+    "react-router-dom": "6.3.0",
+    "styled-components": "^5.3.5"
   }
 }

@@ -136,24 +136,24 @@ const uncomment = async (params, credentials, postId, comment) => {
 }
 
 
-// export {
-//   listNewsFeed,
-//   listByUser,
-//   create,
-//   remove,
-//   like,
-//   unlike,
-//   comment,
-//   uncomment
-// }
+export {
+  listNewsFeed,
+  listByUser,
+  create,
+  remove,
+  like,
+  unlike,
+  comment,
+  uncomment
+};
 
-module.exports = {
-                  listNewsFeed,
-                  listByUser,
-                  create,
-                  remove,
-                  like,
-                  unlike,
-                  comment,
-                  uncomment
-                };
+// module.exports = {
+//                   listNewsFeed,
+//                   listByUser,
+//                   create,
+//                   remove,
+//                   like,
+//                   unlike,
+//                   comment,
+//                   uncomment
+//                 };

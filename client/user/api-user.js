@@ -125,18 +125,7 @@ const findPeople = async (params, credentials, signal) => {
   }
 }
 
-// export {
-//   create,
-//   list,
-//   read,
-//   update,
-//   remove,
-//   follow,
-//   unfollow,
-//   findPeople
-// }
-
-module.exports = {
+export {
   create,
   list,
   read,
@@ -146,3 +135,14 @@ module.exports = {
   unfollow,
   findPeople
 };
+
+// module.exports = {
+//   create,
+//   list,
+//   read,
+//   update,
+//   remove,
+//   follow,
+//   unfollow,
+//   findPeople
+// };

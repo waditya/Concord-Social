@@ -1,22 +1,22 @@
-import React, {useState, useEffect} from 'react'
-import auth from './../auth/auth-helper'
-import Card from '@material-ui/core/Card'
-import CardHeader from '@material-ui/core/CardHeader'
-import CardContent from '@material-ui/core/CardContent'
-import CardActions from '@material-ui/core/CardActions'
-import Typography from '@material-ui/core/Typography'
-import Avatar from '@material-ui/core/Avatar'
-import IconButton from '@material-ui/core/IconButton'
-import DeleteIcon from '@material-ui/icons/Delete'
-import FavoriteIcon from '@material-ui/icons/Favorite'
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import CommentIcon from '@material-ui/icons/Comment'
-import Divider from '@material-ui/core/Divider'
-import PropTypes from 'prop-types'
-import {makeStyles} from '@material-ui/core/styles'
-import {Link} from 'react-router-dom'
-import {remove, like, unlike} from './api-post.js'
-import Comments from './Comments'
+const React, {useState, useEffect} =require('react');
+const auth = require( './../auth/auth-helper');
+const Card =require('@material-ui/core/Card');
+const CardHeader =require('@material-ui/core/CardHeader');
+const CardContent =require('@material-ui/core/CardContent');
+const CardActions =require('@material-ui/core/CardActions');
+const Typography =require('@material-ui/core/Typography');
+const Avatar =require('@material-ui/core/Avatar');
+const IconButton =require('@material-ui/core/IconButton');
+const DeleteIcon =require('@material-ui/icons/Delete');
+const FavoriteIcon =require('@material-ui/icons/Favorite');
+const FavoriteBorderIcon =require('@material-ui/icons/FavoriteBorder');
+const CommentIcon =require('@material-ui/icons/Comment');
+const Divider =require('@material-ui/core/Divider');
+const PropTypes =require('prop-types');
+const { makeStyles } =require('@material-ui/core/styles');
+const { Link } =require('react-router-dom');
+const { remove, like, unlike } =require('./api-post.js');
+const Comments =require('./Comments');
 
 const useStyles = makeStyles(theme => ({
   card: {

@@ -178,17 +178,4 @@ const findPeople = async (req, res) => {
   }
 }
 
-module.exports =  {create,
-                    userByID,
-                    read,
-                    list,
-                    remove,
-                    update,
-                    photo,
-                    defaultPhoto,
-                    addFollowing,
-                    addFollower,
-                    removeFollowing,
-                    removeFollower,
-                    findPeople
-                  };
+export {create,userByID,read,list,remove,update,photo,defaultPhoto,addFollowing,addFollower,removeFollowing,removeFollower,indPeople};

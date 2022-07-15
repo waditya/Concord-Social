@@ -156,16 +156,4 @@ const isPoster = (req, res, next) => {
   next()
 }
 
-module.exports = {
-  listByUser,
-  listNewsFeed,
-  create,
-  postByID,
-  remove,
-  photo,
-  like,
-  unlike,
-  comment,
-  uncomment,
-  isPoster
-};
+export {listByUser,listNewsFeed,create,postByID,remove,photo,like,unlike,comment,uncomment,isPoster};

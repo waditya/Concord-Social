@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
-import PropTypes from 'prop-types'
-import IconButton from '@material-ui/core/IconButton'
-import Button from '@material-ui/core/Button'
-import DeleteIcon from '@material-ui/icons/Delete'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
-import DialogContentText from '@material-ui/core/DialogContentText'
-import DialogTitle from '@material-ui/core/DialogTitle'
-import auth from './../auth/auth-helper'
-import {remove} from './api-user.js'
-import {Redirect, Link} from 'react-router-dom'
+const React, {useState} =require('react');
+const PropTypes =require('prop-types');
+const IconButton =require('@material-ui/core/IconButton');
+const Button =require('@material-ui/core/Button');
+const DeleteIcon =require('@material-ui/icons/Delete');
+const Dialog =require('@material-ui/core/Dialog');
+const DialogActions =require('@material-ui/core/DialogActions');
+const DialogContent =require('@material-ui/core/DialogContent');
+const DialogContentText =require('@material-ui/core/DialogContentText');
+const DialogTitle =require('@material-ui/core/DialogTitle');
+const auth =require('./../auth/auth-helper');
+const {remove} =require('./api-user.js');
+const {Redirect, Link} =require('react-router-dom');
 
 export default function DeleteUser(props) {
   const [open, setOpen] = useState(false)

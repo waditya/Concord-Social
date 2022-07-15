@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from 'react'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
-import TextField from '@material-ui/core/TextField'
-import Typography from '@material-ui/core/Typography'
-import Icon from '@material-ui/core/Icon'
-import Avatar from '@material-ui/core/Avatar'
-import FileUpload from '@material-ui/icons/AddPhotoAlternate'
-import { makeStyles } from '@material-ui/core/styles'
-import auth from './../auth/auth-helper'
-import {read, update} from './api-user.js'
-import {Redirect} from 'react-router-dom'
+const React, {useEffect, useState} =require('react');
+const Card =require('@material-ui/core/Card');
+const CardActions =require('@material-ui/core/CardActions');
+const CardContent =require('@material-ui/core/CardContent');
+const Button =require('@material-ui/core/Button');
+const TextField =require('@material-ui/core/TextField');
+const Typography =require('@material-ui/core/Typography');
+const Icon =require('@material-ui/core/Icon');
+const Avatar =require('@material-ui/core/Avatar');
+const FileUpload =require('@material-ui/icons/AddPhotoAlternate');
+const { makeStyles } =require('@material-ui/core/styles');
+const auth =require('./../auth/auth-helper');
+const {read, update} =require('./api-user.js');
+const {Redirect} =require('react-router-dom');
 
 const useStyles = makeStyles(theme => ({
   card: {

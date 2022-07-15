@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import {makeStyles} from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import ListItemText from '@material-ui/core/ListItemText'
-import Avatar from '@material-ui/core/Avatar'
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
-import Edit from '@material-ui/icons/Edit'
-import Divider from '@material-ui/core/Divider'
-import DeleteUser from './DeleteUser'
-import auth from './../auth/auth-helper'
-import {read} from './api-user.js'
-import {Redirect, Link} from 'react-router-dom'
-import FollowProfileButton from './../user/FollowProfileButton'
-import ProfileTabs from './../user/ProfileTabs'
-import {listByUser} from './../post/api-post.js'
+const React, { useState, useEffect } =require('react');
+const {makeStyles} =require('@material-ui/core/styles');
+const Paper =require('@material-ui/core/Paper');
+const List =require('@material-ui/core/List');
+const ListItem =require('@material-ui/core/ListItem');
+const ListItemAvatar =require('@material-ui/core/ListItemAvatar');
+const ListItemSecondaryAction =require('@material-ui/core/ListItemSecondaryAction');
+const ListItemText =require('@material-ui/core/ListItemText');
+const Avatar =require('@material-ui/core/Avatar');
+const IconButton =require('@material-ui/core/IconButton');
+const Typography =require('@material-ui/core/Typography');
+const Edit =require('@material-ui/icons/Edit');
+const Divider =require('@material-ui/core/Divider');
+const DeleteUser =require('./DeleteUser');
+const auth =require('./../auth/auth-helper');
+const {read} =require('./api-user.js');
+const {Redirect, Link} =require('react-router-dom');
+const FollowProfileButton =require('./../user/FollowProfileButton');
+const ProfileTabs =require('./../user/ProfileTabs');
+const {listByUser} =require('./../post/api-post.js');
 
 const useStyles = makeStyles(theme => ({
   root: theme.mixins.gutters({

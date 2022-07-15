@@ -1,5 +1,5 @@
-import React from 'react'
-import { hydrate } from 'react-dom'
-import App from './App'
+const React =require('react');
+const { hydrate } =require('react-dom');
+const App =require('./App');
 
-hydrate(<App/>, document.getElementById('root'))
+hydrate(<App/>, document.getElementById('root'));

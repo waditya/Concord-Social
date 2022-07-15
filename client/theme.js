@@ -1,8 +1,8 @@
-const { createMuiTheme } = require('@material-ui/core/styles')
+const { createMuiTheme } = require('@material-ui/core/styles');
 // const { teal } = require('@material-ui/core/styles')
 // const { orange } = require('@material-ui/core/styles')
-const { teal } = require('@material-ui/core/colors/teal')
-const { orange } = require('@material-ui/core/colors/orange')
+const { teal } = require('@material-ui/core/colors/teal');
+const { orange } = require('@material-ui/core/colors/orange');
 
 const theme = createMuiTheme({
     palette: {
@@ -19,6 +19,6 @@ const theme = createMuiTheme({
       contrastText: '#000'
     }
     }
-  })
+  });
 
-  export default theme;
+export default theme;

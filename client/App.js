@@ -1,6 +1,6 @@
 const React = require('react');
 const MainRouter = require('./MainRouter');
-const {BrowserRouter} = require('react-router-dom');
+const { BrowserRouter } = require('react-router-dom');
 const { ThemeProvider } = require('@material-ui/styles');
 const theme = require('./theme');
 const { hot } = require('react-hot-loader');

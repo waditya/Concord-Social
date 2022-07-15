@@ -1,16 +1,16 @@
-var React = require('react')
-var { Component } = require('react')
-var { Route } = require('react-router-dom')
-var { Switch } = require('react-router-dom')
-var Home  = require('./core/Home')
-var Users = require('./user/Users')
-var Signup = require('./user/Signup')
-var Signin = require('./auth/Signin')
-var EditProfile = require('./user/EditProfile')
-var Profile = require('./user/Profile')
-var PrivateRoute = require('./auth/PrivateRoute')
+const React = require('react');
+const { Component } = require('react');
+const { Route } = require('react-router-dom');
+const { Switch } = require('react-router-dom');
+const Home  = require('./core/Home');
+const Users = require('./user/Users');
+const Signup = require('./user/Signup');
+const Signin = require('./auth/Signin');
+const EditProfile = require('./user/EditProfile');
+const Profile = require('./user/Profile');
+const PrivateRoute = require('./auth/PrivateRoute');
 
-var Menu = require('./core/Menu')
+const Menu = require('./core/Menu')
 
 
 const MainRouter = () => {

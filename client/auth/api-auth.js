@@ -28,3 +28,7 @@ export {
   signin,
   signout
 }
+
+module.exports = {
+                  signin,
+                  signout};

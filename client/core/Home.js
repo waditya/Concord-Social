@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     borderBottom: '1px solid #d0d0d0',
     '& a':{
       color: '#3f4771'
-    } 
+    }
   }
 }))
 
@@ -66,7 +66,7 @@ export default function Home({history}){
                 <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@boudewijn_huysmans" target="_blank" rel="noopener noreferrer">Boudewijn Huysmans</a> on Unsplash</Typography>
                 <CardContent>
                   <Typography type="body1" component="p">
-                    Welcome to the MERN Social home page. 
+                    Welcome to the MERN Social home page.
                   </Typography>
                 </CardContent>
               </Card>
@@ -86,3 +86,5 @@ export default function Home({history}){
       </div>
     )
 }
+
+// module.exports = {Home};

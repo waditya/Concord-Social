@@ -28,4 +28,5 @@ const config = {
     }
 }
 
-module.exports = config
+module.exports = router;
+module.exports = config;

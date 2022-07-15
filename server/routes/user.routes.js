@@ -1,8 +1,8 @@
-import express from 'express'
-import userCtrl from '../controllers/user.controller'
-import authCtrl from '../controllers/auth.controller'
+const express = require('express');
+const userCtrl = require('../controllers/user.controller');
+const authCtrl = require('../controllers/auth.controller');
 
-const router = express.Router()
+const router = express.Router();
 
 router.route('/api/users')
   .get(userCtrl.list)
@@ -28,4 +28,4 @@ router.route('/api/users/:userId')
 
 router.param('userId', userCtrl.userByID)
 
-export default router
+module.exports = router;

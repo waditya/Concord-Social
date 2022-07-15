@@ -135,3 +135,4 @@ NewPost.propTypes = {
   addUpdate: PropTypes.func.isRequired
 }
 
+// module.exports = {NewPost};

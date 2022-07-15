@@ -98,3 +98,5 @@ export default function Signin(props) {
       </Card>
     )
 }
+
+// module.exports = {Signin};

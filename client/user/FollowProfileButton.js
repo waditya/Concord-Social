@@ -21,3 +21,5 @@ FollowProfileButton.propTypes = {
   following: PropTypes.bool.isRequired,
   onButtonClick: PropTypes.func.isRequired
 }
+
+// module.exports = {FollowProfileButton};

@@ -27,13 +27,13 @@ const theme = require('./../client/theme');
 //end
 
 //comment out before building for production
-const devBundle = require('./devBundle');
+// const devBundle = require("./devBundle");
 
 const CURRENT_WORKING_DIR = process.cwd();
 const app = express();
 
 //comment out before building for production
-devBundle.compile(app);
+//devBundle.compile(app);
 
 // parse body params and attache them to req.body
 app.use(bodyParser.json());
@@ -84,4 +84,4 @@ app.use((err, req, res, next) => {
   }
 });
 
-export default app
+export default app;

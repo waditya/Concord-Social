@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export default function Users() { 
+export default function Users() {
   const classes = useStyles()
   const [users, setUsers] = useState([])
 
@@ -75,3 +75,5 @@ export default function Users() {
       </Paper>
     )
 }
+
+// module.exports = {Users};

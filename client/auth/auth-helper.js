@@ -27,3 +27,5 @@ const auth = {
 }
 
 export default auth
+
+module.exports = {auth};

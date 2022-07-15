@@ -125,3 +125,5 @@ Comments.propTypes = {
   comments: PropTypes.array.isRequired,
   updateComments: PropTypes.func.isRequired
 }
+
+// module.exports = {Comments};

@@ -40,7 +40,7 @@ const listNewsFeed = async (params, credentials, signal) => {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + credentials.t
       }
-    })    
+    })
     return await response.json()
   } catch(err) {
     console.log(err)
@@ -136,13 +136,24 @@ const uncomment = async (params, credentials, postId, comment) => {
 }
 
 
-export {
-  listNewsFeed,
-  listByUser,
-  create,
-  remove,
-  like,
-  unlike,
-  comment,
-  uncomment
-}
+// export {
+//   listNewsFeed,
+//   listByUser,
+//   create,
+//   remove,
+//   like,
+//   unlike,
+//   comment,
+//   uncomment
+// }
+
+module.exports = {
+                  listNewsFeed,
+                  listByUser,
+                  create,
+                  remove,
+                  like,
+                  unlike,
+                  comment,
+                  uncomment
+                };

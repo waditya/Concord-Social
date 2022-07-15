@@ -106,3 +106,5 @@ export default function Signup (){
       </Dialog>
     </div>)
 }
+
+// module.exports = {Signup};

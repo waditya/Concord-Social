@@ -16,3 +16,6 @@ PostList.propTypes = {
   posts: PropTypes.array.isRequired,
   removeUpdate: PropTypes.func.isRequired
 }
+
+
+// module.exports = {PostList};

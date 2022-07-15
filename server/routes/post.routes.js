@@ -1,9 +1,9 @@
-import express from 'express'
-import userCtrl from '../controllers/user.controller'
-import authCtrl from '../controllers/auth.controller'
-import postCtrl from '../controllers/post.controller'
+const express = require('express');
+const userCtrl = require('../controllers/user.controller');
+const authCtrl = require('../controllers/auth.controller');
+const postCtrl = require('../controllers/post.controller');
 
-const router = express.Router()
+const router = express.Router();
 
 router.route('/api/posts/new/:userId')
   .post(authCtrl.requireSignin, postCtrl.create)
@@ -33,4 +33,4 @@ router.route('/api/posts/:postId')
 router.param('userId', userCtrl.userByID)
 router.param('postId', postCtrl.postByID)
 
-export default router
+module.exports = router;

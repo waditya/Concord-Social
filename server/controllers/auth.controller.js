@@ -65,4 +65,11 @@ export default {
   signout,
   requireSignin,
   hasAuthorization
-}
+};
+
+// module.exports = {
+//                   signin,
+//                   signout,
+//                   requireSignin,
+//                   hasAuthorization
+//                 };

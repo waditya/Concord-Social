@@ -29,7 +29,7 @@ const config = {
                 use: 'file-loader'
             }
         ]
-    },  
+    },
     plugins: [
           new webpack.HotModuleReplacementPlugin(),
           new webpack.NoEmitOnErrorsPlugin()
@@ -41,4 +41,4 @@ const config = {
     }
 }
 
-module.exports = config
+module.exports = config;

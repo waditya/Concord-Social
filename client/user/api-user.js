@@ -118,14 +118,25 @@ const findPeople = async (params, credentials, signal) => {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + credentials.t
       }
-    })    
+    })
     return await response.json()
   } catch(err) {
     console.log(err)
   }
 }
 
-export {
+// export {
+//   create,
+//   list,
+//   read,
+//   update,
+//   remove,
+//   follow,
+//   unfollow,
+//   findPeople
+// }
+
+module.exports = {
   create,
   list,
   read,
@@ -134,4 +145,4 @@ export {
   follow,
   unfollow,
   findPeople
-}
+};

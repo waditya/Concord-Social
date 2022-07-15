@@ -54,3 +54,4 @@ const Menu = () => withRouter(
 ))
 
 export default Menu
+module.exports = Menu;

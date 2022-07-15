@@ -50,3 +50,4 @@ FollowGrid.propTypes = {
   people: PropTypes.array.isRequired
 }
 
+// module.exports = {FollowGrid};
